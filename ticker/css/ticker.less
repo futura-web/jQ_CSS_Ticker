@@ -1,0 +1,67 @@
+/* ---- Line 1 - 21 is not needed in order for this ticker to work  ----*/
+
+html, body{
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* ---- Line 1 - 21 is not needed in order for this ticker to work  ---- */
+
+/*
+*
+*	CSS / jQuery animated Ticker
+*
+*	author	Dinko Skopljak
+*	web		https://futura-web.de
+*	email	ds@futura-web.de
+*
+*	jQuery functions()
+*
+*   Use https://skalman.github.io/UglifyJS-online/ to minify this code
+*
+*/
+
+.ticker{
+    display: flex;
+    padding-left: 100%;
+    overflow: hidden;
+
+    ul{
+        display: flex;
+        list-style: none;
+    }
+
+    li{
+        padding-left: 1rem;
+        white-space: nowrap;
+
+        &:first-child{
+            padding-left: 0;
+        }
+
+        &::before{
+            content: "+++";
+            display: inline;
+            padding-right: 1rem;
+        }
+
+        &:last-child::after{
+            content: "+++";
+            display: inline;
+            padding-left: 1rem;
+        }
+    }
+}
