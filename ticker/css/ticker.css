@@ -6,7 +6,7 @@
 *	web     https://futura-web.de
 *	email	ds@futura-web.de
 *
-*	jQuery functions()
+*	CSS
 *
 *   Use https://skalman.github.io/UglifyJS-online/ to minify this code
 *
@@ -18,27 +18,27 @@
     overflow: hidden;
 }
 
-.ticker_list{
+.ticker ul{
     display: flex;
     list-style: none;
 }
 
-.ticker_item{
+.ticker li{
     padding-left: 1rem;
     white-space: nowrap;
 }
 
-.ticker_item:first-child{
+.ticker li:first-child{
     padding-left: 0;
 }
 
-.ticker_item::before{
+.ticker li::before{
     content: "+++";
     display: inline;
     padding-right: 1rem;
 }
 
-.ticker_item:last-child::after{
+.ticker li:last-child::after{
     content: "+++";
     display: inline;
     padding-left: 1rem;
