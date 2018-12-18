@@ -3,4 +3,4 @@ A plain jQuery + CSS animation that infinitely loops a text (e.g. newsticker). T
 
 jQ_CSS_Ticker supports two or more tickers on a HTML-page, independent of the amount of list items.
 
-https://ticker.futura-web.de/
+<a href="https://ticker.futura-web.de/" target="_blank">Demo</a>
