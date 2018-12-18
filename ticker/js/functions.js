@@ -20,18 +20,18 @@ jQuery(function($){
 
         tickerView.each(function(){
 
-            var tickerNumber = $(this).index()+1,
+            var tickerIndex = $(this).index()+1,
                 tickerList = $(this).find("ul"),
                 tickerWidth = $(this).outerWidth(),
                 tickerListWidth = tickerList.outerWidth(),
                 tickerCompleteWidth = tickerWidth + tickerListWidth,
                 transitionRound = tickerCompleteWidth * 10,
                 tickerRoundFixed = transitionRound.toFixed(),
-                keyFrames = "@keyframes ticker" + tickerNumber + "{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-" + tickerCompleteWidth + "px,0,0)}}";
+                keyFrames = "@keyframes ticker" + tickerIndex + "{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-" + tickerCompleteWidth + "px,0,0)}}";
 
             $("<style type='text/css'>" + keyFrames + "</style>").appendTo($("head"));
 
-            tickerList.css({"animation":"ticker" + tickerNumber + " " + tickerRoundFixed + "ms infinite linear"});
+            tickerList.css({"animation":"ticker" + tickerIndex + " " + tickerRoundFixed + "ms infinite linear"});
         });
     }
 
