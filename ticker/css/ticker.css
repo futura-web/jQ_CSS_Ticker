@@ -1,31 +1,9 @@
-/* ---- Line 1 - 21 is not needed in order for this ticker to work  ----*/
-
-html, body{
-    height: 100%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    display: flex;
-    align-items: center;
-}
-
-.container{
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-/* ---- Line 1 - 21 is not needed in order for this ticker to work  ---- */
-
 /*
 *
 *	CSS / jQuery animated Ticker
 *
 *	author	Dinko Skopljak
-*	web		https://futura-web.de
+*	web https://futura-web.de
 *	email	ds@futura-web.de
 *
 *	jQuery functions()
